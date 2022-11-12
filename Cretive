@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  int a = 0;
+  scanf("%d", &a);
+  switch(--a / 10) {
+  case 0 :
+    switch(a % 2) {
+    case 0 :
+    printf("홀수");
+    break;
+    case 1 :
+    printf("짝수");
+    break;
+    }
+    break;
+    
+    default :
+    printf("자연수");
+    break;
+  }
+  return 0;
+}
