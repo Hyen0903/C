@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+  int a = 0;
+  int c = 0;
+  for(int b = 0; b <= 10; b++) {
+    printf("\n입력해야 할 수 :");
+    scanf("%d", &c);
+    switch(c > a) {
+      case 0 :
+      break;
+      case 1 :
+      a = c;
+    }
+  }
+  printf("%d", a);
+  return 0;
+}
